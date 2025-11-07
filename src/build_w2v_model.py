@@ -16,9 +16,19 @@ wiki_api = wikipediaapi.Wikipedia(
 )
 
 paginas_wiki = [
-    "Cão", "Gato", "Adestramento de cães", "Raças de cães", "Raças de gatos",
-    "Cinomose", "Parvovirose canina", "Comportamento canino", "Ração",
-    "Golden Retriever", "Buldogue", "Poodle", "Gato persa", "Siamês (gato)"
+    # Cães
+    "Cão", "Adestramento de cães", "Raças de cães", "Comportamento canino",
+    "Golden Retriever", "Labrador Retriever", "Buldogue", "Poodle", "Pastor-alemão",
+    "Rottweiler", "Shih-tzu", "Lulu-da-pomerânia", "Pug", "Dachshund",
+    # Gatos
+    "Gato", "Gato persa", "Siamês (gato)", "Maine Coon", "Sphynx (gato)",
+    "Gato-de-bengala", "Ragdoll", "Abissínio", "Scottish Fold",
+    # Saúde
+    "Veterinária", "Vacinação", "Castração", "Cinomose", "Parvovirose canina",
+    "Leishmaniose visceral canina", "Raiva (doença)", "Otite", "Dermatite atópica",
+    "Pulga", "Carrapato", "Vermífugo",
+    # Cuidados
+    "Ração", "Dieta canina", "Dieta felina", "Enriquecimento ambiental", "Caixa de areia"
 ]
 
 corpus_completo = []
