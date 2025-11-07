@@ -5,37 +5,32 @@ import numpy as np
 from tensorflow.keras.models import load_model
 import json
 import random
-import gensim
 import streamlit as st
 import os
+# (Gensim não é mais necessário, pois estamos usando TF-IDF)
 
 @st.cache_resource
 def load_all_models_and_data():
-    # --- ADICIONE ESTAS 5 LINHAS AQUI ---
+    # --- Downloads do NLTK ---
     print("Downloading NLTK data...")
     nltk.download('punkt')
     nltk.download('wordnet')
-    nltk.download('punkt_tab')  # <-- A CORREÇÃO ESTÁ AQUI
+    nltk.download('punkt_tab')
     print("NLTK data downloaded.")
-    # -------------------------------------
-
-    print("Iniciando carregamento de modelos...")
-
-    # Caminhos relativos (o resto da sua função)
-    base_path = os.path.dirname(__file__) 
-    # ... (etc) ...
-
+    
+    print("Iniciando carregamento de modelos (TF-IDF)...")
+    
+    # --- Caminhos dos Arquivos ---
     base_path = os.path.dirname(__file__) # Pega a pasta 'src'
     model_h5_path = os.path.join(base_path, 'model.h5')
-    w2v_model_path = os.path.join(base_path, 'dog_w2v.model')
-    words_pkl_path = os.path.join(base_path, 'words.pkl')
+    vectorizer_pkl_path = os.path.join(base_path, 'vectorizer.pkl') # <-- USA O VETORIZADOR
     classes_pkl_path = os.path.join(base_path, 'classes.pkl')
-    intents_json_path = os.path.join(base_path, '..', 'data', 'intents.json') # Sobe um nível, entra em 'data'
+    intents_json_path = os.path.join(base_path, '..', 'data', 'intents.json')
 
+    # --- Carregando os Arquivos Corretos ---
     try:
         model = load_model(model_h5_path)
-        w2v_model = gensim.models.Word2Vec.load(w2v_model_path)
-        words = pickle.load(open(words_pkl_path, 'rb'))
+        vectorizer = pickle.load(open(vectorizer_pkl_path, 'rb')) # <-- CARREGA O VETORIZADOR
         classes = pickle.load(open(classes_pkl_path, 'rb'))
         data_file = open(intents_json_path, encoding='utf-8').read()
         intents = json.loads(data_file)
@@ -44,31 +39,30 @@ def load_all_models_and_data():
         st.error(f"Caminho procurado: {e.filename}")
         st.stop()
         
-    VECTOR_SIZE = w2v_model.vector_size
     lemmatizer = WordNetLemmatizer()
     
     print("...Modelos e dados carregados com sucesso!")
-    return model, w2v_model, words, classes, intents, lemmatizer, VECTOR_SIZE
+    
+    # --- A CORREÇÃO ESTÁ AQUI ---
+    # Retorna os 5 itens que o app.py espera:
+    return model, vectorizer, classes, intents, lemmatizer
 
-# --- Funções de processamento ---
-def get_sentence_vector(sentence_tokens, w2v_model, lemmatizer, VECTOR_SIZE):
-    sentence_vec = np.zeros(VECTOR_SIZE)
-    count = 0
-    for word in sentence_tokens:
-        lemmatized_word = lemmatizer.lemmatize(word.lower())
-        if lemmatized_word in w2v_model.wv:
-            sentence_vec += w2v_model.wv[lemmatized_word]
-            count += 1
-    if count > 0:
-        sentence_vec /= count
-    return sentence_vec
+# --- Funções de processamento ATUALIZADAS para TF-IDF ---
 
-def clean_up_sentence(sentence):
+def clean_up_sentence_and_lemmatize(sentence, lemmatizer):
+    ignore_words = ['?', '!', '.', ',']
     sentence_words = nltk.word_tokenize(sentence)
-    return sentence_words 
+    lemmatized_words = [lemmatizer.lemmatize(word.lower()) for word in sentence_words if word not in ignore_words]
+    # Retorna a frase limpa como uma string única
+    return " ".join(lemmatized_words)
 
-def predict_class(sentence_vec, model, classes):
-    res = model.predict(np.array([sentence_vec]))[0]
+def get_tfidf_vector(sentence_string, vectorizer):
+    # Transforma a string única em um vetor TF-IDF
+    vector = vectorizer.transform([sentence_string]).toarray()
+    return vector
+
+def predict_class(sentence_vector, model, classes):
+    res = model.predict(sentence_vector)[0]
     
     ERROR_THRESHOLD = 0.05 
     results = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
@@ -81,7 +75,7 @@ def predict_class(sentence_vec, model, classes):
 
 def get_bot_response(ints, intents_json):
     tag = "sem_resposta" # Define 'sem_resposta' como padrão
-    if ints: # Se o modelo deu uma previsão acima do limiar
+    if ints: 
         tag = ints[0]['intent']
         
     list_of_intents = intents_json['intents']
@@ -90,7 +84,6 @@ def get_bot_response(ints, intents_json):
             result = random.choice(i['responses'])
             break
             
-    # Se algo der errado, ele ainda usará a resposta de "sem_resposta"
     if 'result' not in locals():
          for i in list_of_intents:
             if i['tag'] == 'sem_resposta':
@@ -99,9 +92,15 @@ def get_bot_response(ints, intents_json):
                 
     return result
 
-def get_response_from_message(message, model, w2v_model, words, classes, intents, lemmatizer, VECTOR_SIZE):
-    user_tokens = clean_up_sentence(message)
-    user_vec = get_sentence_vector(user_tokens, w2v_model, lemmatizer, VECTOR_SIZE)
+# --- A FUNÇÃO PRINCIPAL QUE O SITE VAI CHAMAR (ATUALIZADA) ---
+
+def get_response_from_message(message, model, vectorizer, classes, intents, lemmatizer):
+    # 1. Limpa e lematiza a frase
+    user_string_clean = clean_up_sentence_and_lemmatize(message, lemmatizer)
+    # 2. Vetoriza com TF-IDF
+    user_vec = get_tfidf_vector(user_string_clean, vectorizer)
+    # 3. Prevê
     ints = predict_class(user_vec, model, classes)
+    # 4. Obtém resposta
     res = get_bot_response(ints, intents)
     return res
