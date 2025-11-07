@@ -398,6 +398,39 @@
         "Aqui estão os endereços dos hospitais veterinários públicos em São Paulo (todos exigem triagem social obrigatória na recepção):\n\n* **Unidade Leste:** Av. Salim Farah Maluf, esquina com R. Ulisses Cruz, lado par – Tatuapé. Agendamento presencial (casos não emergenciais): Terças, 14h-16h.\n\n* **Unidade Norte:** Rua Atílio Piffer, 687 - Casa Verde. Agendamento presencial (casos não emergenciais): Quartas, 14h-16h.\n\n* **Unidade Sul:** Rua Agostino Togneri, n° 153 – Jurubatuba. Casos não emergenciais: Senhas de segunda a sexta a partir das 7h. Agendamento presencial: Segundas, 14h-16h.\n\n* **Unidade Oeste:** Av. Professor Orlando Marques de Paiva, 87 – Butantã (USP). Casos não emergenciais: Senhas de segunda a sexta a partir das 7h."
       ]
     },
+
+      {
+      "tag": "castracao",
+      "patterns": [
+        "Devo castrar meu pet?",
+        "Quais as vantagens de castrar?",
+        "A castração é boa?",
+        "castração",
+        "Quando posso castrar meu cachorro ou gato?",
+        "é caro castrar?",
+        "cirurgia de castração",
+        "meu pet vai engordar se castrar?",
+        "mitos sobre castração",
+        "castração muda o comportamento?",
+        "é perigoso castrar?",
+        "recuperação da castração",
+        "pós-operatório castração",
+        "por que castrar?",
+        "benefícios da castração",
+        "castração gratuita",
+        "castração de graça",
+        "castração na prefeitura",
+        "como castrar no SP 156",
+        "agendamento castração gratuita",
+        "documentos para castração gratuita"
+      ],
+      "responses": [
+        "A castração é altamente recomendada! Ela previne várias doenças (como câncer de mama, útero e próstata) e melhora o comportamento, reduzindo o risco de fugas, marcação de território e agressividade. O ideal é conversar com seu veterinário sobre a melhor idade para o procedimento.",
+        "A castração é um procedimento seguro e muito recomendado. Sobre os mitos comuns: 1) O pet não fica 'triste', a personalidade de brincar continua a mesma. 2) A castração não engorda; o que engorda é comer demais e não fazer exercício! Apenas ajuste a quantidade de ração após o procedimento.",
+        "Sim, a Prefeitura de São Paulo oferece castração gratuita! O cadastro é feito pelo portal SP 156 (busque por 'Castração de cães e gatos').\n\nVocê precisará preencher o formulário online e enviar documentos como RG, CPF e comprovante de residência atualizado. O animal deve ter entre 3 meses e 10 anos.\n\nApós o cadastro, uma clínica contratada entrará em contato em até 30 dias para agendar. *Lembre-se que para atendimento nos hospitais públicos, o animal precisa ter o RGA (Registro Geral do Animal).*."
+      ]
+    
+    },
     {
       "tag": "vermes",
       "patterns": [
