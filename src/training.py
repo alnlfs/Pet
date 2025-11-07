@@ -5,23 +5,20 @@ import pickle
 import numpy as np
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout
-from tensorflow.keras.optimizers import SGD
 import random
-import gensim
+from sklearn.feature_extraction.text import TfidfVectorizer
 
-nltk.download('wordnet') # Baixa o dicionário para lematização
+# Garante que temos todos os pacotes NLTK
+nltk.download('wordnet')
+nltk.download('punkt')
 
-print("Carregando modelo Word2Vec 'dog_w2v.model'...")
-w2v_model = gensim.models.Word2Vec.load("dog_w2v.model")
-VECTOR_SIZE = w2v_model.vector_size 
 lemmatizer = WordNetLemmatizer()
 
-words = []
 classes = []
-documents = []
+data_for_processing = [] # Nossa nova lista de pares (pattern, tag)
 ignore_words = ['?', '!', '.', ',']
 
-# Carregando o JSON (agora ele procura na pasta ../data/)
+# Carregando o JSON
 try:
     data_file = open('../data/intents.json', encoding='utf-8').read() 
 except FileNotFoundError:
@@ -31,60 +28,71 @@ except FileNotFoundError:
 intents = json.loads(data_file)
 print("Processando intents...")
 
+# --- ETAPA 1: Criar pares (pattern, tag) e lista de classes ---
 for intent in intents['intents']:
     for pattern in intent['patterns']:
+        # 1. Limpa e lematiza o pattern (frase)
         w = nltk.word_tokenize(pattern)
-        words.extend(w)
-        documents.append((w, intent['tag']))
+        lemmatized_words = [lemmatizer.lemmatize(word.lower()) for word in w if word not in ignore_words]
+        processed_pattern = " ".join(lemmatized_words)
+        
+        # 2. Adiciona o par (frase limpa, tag) à nossa lista
+        data_for_processing.append((processed_pattern, intent['tag']))
+
+        # 3. Adiciona a tag à lista de classes (se for nova)
         if intent['tag'] not in classes:
             classes.append(intent['tag'])
 
-words = [lemmatizer.lemmatize(w.lower()) for w in words if w not in ignore_words]
-words = sorted(list(set(words)))
 classes = sorted(list(set(classes)))
-
-pickle.dump(words, open('words.pkl', 'wb'))
 pickle.dump(classes, open('classes.pkl', 'wb'))
 
-def get_sentence_vector(sentence_tokens):
-    sentence_vec = np.zeros(VECTOR_SIZE)
-    count = 0
-    for word in sentence_tokens:
-        lemmatized_word = lemmatizer.lemmatize(word.lower())
-        if lemmatized_word in w2v_model.wv:
-            sentence_vec += w2v_model.wv[lemmatized_word]
-            count += 1
-    if count > 0:
-        sentence_vec /= count
-    return sentence_vec
+# --- ETAPA 2: Embaralhar os dados ANTES de vetorizar ---
+random.shuffle(data_for_processing)
 
-training = []
+# Separa os dados em X (patterns) e Y (tags)
+training_patterns = [data[0] for data in data_for_processing]
+training_tags = [data[1] for data in data_for_processing]
+
+print(f"Total de {len(training_patterns)} padrões de treino embaralhados.")
+
+# --- ETAPA 3: Vetorizar X (TF-IDF) e Y (One-Hot) ---
+print("Criando dados de treino com TF-IDF...")
+
+
+# 1. Cria e treina o vetorizador TF-IDF
+vectorizer = TfidfVectorizer()
+train_x = vectorizer.fit_transform(training_patterns).toarray()
+pickle.dump(vectorizer, open('vectorizer.pkl', 'wb')) # Salva o vetorizador
+
+# 2. Cria o train_y (One-Hot encode)
 output_empty = [0] * len(classes)
-print("Criando dados de treino com Word2Vec...")
-
-for doc in documents:
-    pattern_tokens = doc[0]
-    sentence_vec = get_sentence_vector(pattern_tokens)
+train_y = []
+for tag in training_tags:
     output_row = list(output_empty)
-    output_row[classes.index(doc[1])] = 1
-    training.append([sentence_vec, output_row])
+    output_row[classes.index(tag)] = 1
+    train_y.append(output_row)
 
-random.shuffle(training)
-train_x = np.array([i[0] for i in training])
-train_y = np.array([i[1] for i in training])
-print("Dados de treino criados com sucesso.")
+# Converte para numpy arrays
+train_x = np.array(train_x)
+train_y = np.array(train_y)
 
+print("Dados de treino X e Y criados e alinhados com sucesso.")
+
+# --- ETAPA 4: Construir e Treinar o Modelo Keras ---
 print("Construindo o novo modelo Keras...")
 model = Sequential()
-model.add(Dense(128, input_shape=(VECTOR_SIZE,), activation='relu'))
-model.add(Dropout(0.5))
+model.add(Dense(128, input_shape=(train_x.shape[1],), activation='relu'))
+model.add(Dropout(0.3))
 model.add(Dense(64, activation='relu'))
-model.add(Dropout(0.5))
+model.add(Dropout(0.3))
 model.add(Dense(len(train_y[0]), activation='softmax'))
 
-sgd = SGD(learning_rate=0.01, momentum=0.9, nesterov=True)
-model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
+# Usando o 'adam' e 500 epochs que já definimos
+model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
+# Vamos reduzir as epochs para 200, pois 'adam' e TF-IDF aprendem rápido
+# e 500 pode estar causando "overfitting" (passando do ponto).
 model.fit(train_x, train_y, epochs=200, batch_size=5, verbose=1)
+
 model.save('model.h5')
-print("Novo modelo 'src/model.h5' salvo.")
+print("Novo modelo 'src/model.h5' (TF-IDF CORRIGIDO) salvo.")
