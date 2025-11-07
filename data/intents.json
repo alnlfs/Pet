@@ -64,6 +64,314 @@
         "Desculpe, não entendi. Pode reformular a pergunta?",
         "Hmm, não tenho certeza sobre isso. Pode perguntar de outra forma?"
       ]
+    },
+    {
+      "tag": "vacinas",
+      "patterns": [
+        "Quando devo vacinar meu pet?",
+        "Quais vacinas meu cachorro precisa?",
+        "E o gato, precisa de vacina?",
+        "Sobre vacinação",
+        "vacinas são importantes?",
+        "meu filhote precisa de vacinas"
+      ],
+      "responses": [
+        "A vacinação é crucial! Cães geralmente precisam da V8 ou V10 (múltipla) e da antirrábica. Gatos precisam da V3, V4 ou V5, além da antirrábica. O calendário exato deve ser definido por um veterinário, começando nos primeiros meses de vida."
+      ]
+    },
+    {
+      "tag": "castracao",
+      "patterns": [
+        "Devo castrar meu pet?",
+        "Quais as vantagens de castrar?",
+        "A castração é boa?",
+        "castração",
+        "Quando posso castrar meu cachorro ou gato?"
+      ],
+      "responses": [
+        "A castração é altamente recomendada! Ela previne várias doenças (como câncer de mama e próstata), reduz o risco de fugas, marcação de território e agressividade. O ideal é conversar com seu veterinário sobre a melhor idade para o procedimento."
+      ]
+    },
+    {
+      "tag": "treinamento_xixi",
+      "patterns": [
+        "Como ensinar meu cachorro a fazer xixi no lugar certo?",
+        "Meu pet faz xixi pela casa toda",
+        "treinamento de banheiro",
+        "xixi errado",
+        "educar o filhote a usar o tapete"
+      ],
+      "responses": [
+        "Treinar dá trabalho, mas é possível! Limite o espaço dele no início, forre a área desejada com tapete higiênico, leve-o para lá depois de comer ou acordar, e recompense MUITO (com festa e petiscos) quando ele acertar. Nunca brigue se ele errar; apenas limpe com produtos que eliminam o odor (sem amônia)."
+      ]
+    },
+    {
+      "tag": "pulgas_carrapatos",
+      "patterns": [
+        "Como acabar com pulgas?",
+        "Meu pet está se coçando muito",
+        "Achei um carrapato no meu cachorro",
+        "pulga",
+        "carrapato",
+        "meu gato está com pulgas"
+      ],
+      "responses": [
+        "Pulgas e carrapatos são perigosos e transmitem doenças! Mantenha seu pet protegido com um método antipulgas (coleira, pipeta ou comprimido), que deve ser recomendado pelo seu veterinário. Lembre-se também de tratar o ambiente (sua casa), pois 95% das pulgas estão no ambiente, e não no animal."
+      ]
+    },
+    {
+      "tag": "brinquedos",
+      "patterns": [
+        "Qual o melhor brinquedo?",
+        "Meu cachorro destrói tudo",
+        "Como entreter meu gato?",
+        "enriquecimento ambiental",
+        "brinquedo"
+      ],
+      "responses": [
+        "Brinquedos são essenciais para a saúde mental! Para cães que destroem, procure brinquedos de borracha maciça (como os recheáveis). Para gatos, varinhas com penas e brinquedos que eles possam 'caçar' são os melhores. Isso se chama 'enriquecimento ambiental' e evita o tédio e a ansiedade."
+      ]
+    },
+    {
+      "tag": "bot_funcoes",
+      "patterns": [
+        "O que você sabe fazer?",
+        "Quais seus comandos?",
+        "Como você funciona?",
+        "O que você pode me responder?",
+        "me ajuda"
+      ],
+      "responses": [
+        "Eu sou o PetBot, um chatbot de IA treinado para classificar sua intenção! Você pode me perguntar sobre saúde (vacinas, castração), comportamento (treinamento, pulgas) e cuidados gerais com cães e gatos. Como posso ajudar?"
+      ]
+    },
+    {
+      "tag": "comportamento_agressivo",
+      "patterns": [
+        "Meu cachorro está agressivo",
+        "Como lidar com agressividade?",
+        "Meu gato morde muito",
+        "comportamento agressivo",
+        "meu pet está atacando"
+      ],
+      "responses": [
+        "A agressividade pode ter várias causas, como medo, dor ou falta de socialização. É importante identificar o motivo antes de agir. Considere consultar um veterinário comportamentalista para uma avaliação detalhada e um plano de manejo adequado."
+      ]
+    },
+    {
+      "tag": "alimentos_toxicos",
+      "patterns": [
+        "Meu cachorro pode comer chocolate?",
+        "E uva, faz mal?",
+        "Quais comidas são venenosas para gatos?",
+        "Meu pet comeu cebola, e agora?",
+        "lista de alimentos perigosos",
+        "tóxico",
+        "comida que não pode dar"
+      ],
+      "responses": [
+        "MUITO CUIDADO! Vários alimentos humanos são tóxicos. Os piores são: chocolate, uva, uva-passa, cebola, alho, xilitol (adoçante) e abacate. Na dúvida, não ofereça comida humana e consulte um veterinário imediatamente se ele comer algo suspeito."
+      ]
+    },
+    {
+      "tag": "higiene_banho",
+      "patterns": [
+        "Com que frequência devo dar banho?",
+        "Posso dar banho no meu gato?",
+        "Quando devo cortar as unhas?",
+        "higiene do pet",
+        "banho e tosa",
+        "cortar unha do cachorro"
+      ],
+      "responses": [
+        "A frequência do banho depende da raça e do estilo de vida. Cães de pelo curto podem tomar banho a cada 30-45 dias. Gatos se limpam sozinhos e só precisam de banho em situações muito raras. As unhas devem ser cortadas sempre que estiverem fazendo 'clique' no chão, ou conforme orientação do veterinário ou tosador."
+      ]
+    },
+    {
+      "tag": "sinais_doenca_urgente",
+      "patterns": [
+        "Meu cachorro está vomitando",
+        "Meu gato está com diarreia",
+        "Meu pet não quer comer",
+        "Ele parece doente",
+        "vômito",
+        "diarreia",
+        "não come",
+        "meu pet está apático"
+      ],
+      "responses": [
+        "Sinto muito ouvir isso. Vômito, diarreia e perda de apetite são sinais sérios que podem indicar muitas coisas. **Eu sou apenas um bot e não posso fazer diagnósticos.** Por favor, leve seu pet ao **VETERINÁRIO** o mais rápido possível para uma avaliação correta."
+      ]
+    },
+    {
+      "tag": "comportamento_latido_miado",
+      "patterns": [
+        "Meu cachorro late muito",
+        "Por que meu gato mia tanto à noite?",
+        "Como fazer o cachorro parar de latir?",
+        "latido excessivo",
+        "miado alto"
+      ],
+      "responses": [
+        "Latidos ou miados excessivos são uma forma de comunicação. Pode ser tédio, ansiedade de separação, fome ou para chamar sua atenção. Tente aumentar os passeios e brincadeiras (enriquecimento ambiental) para gastar energia. Se o comportamento persistir, um adestrador ou veterinário comportamentalista pode ajudar a identificar a causa."
+      ]
+    },
+    {
+      "tag": "socializacao",
+      "patterns": [
+        "Como socializar meu filhote?",
+        "Meu cachorro é bravo com outros cães",
+        "Meu gato se esconde de visitas",
+        "socialização",
+        "apresentar meu pet para outro"
+      ],
+      "responses": [
+        "A socialização é fundamental, especialmente nos primeiros meses de vida. Apresente seu filhote a diferentes pessoas, sons e outros animais (sempre vacinados!) de forma calma e positiva. Para gatos, ofereça lugares altos e seguros para eles observarem à distância. Forçar a interação pode piorar o medo, então vá com calma e paciência."
+      ]
+    },
+    {
+      "tag": "viagem_pet",
+      "patterns": [
+        "Posso viajar com meu pet?",
+        "Como levar meu cachorro no avião?",
+        "viagem de carro com gato",
+        "o que precisa para viajar com animal?",
+        "transporte pet"
+      ],
+      "responses": [
+        "Viajar com pets exige muito planejamento! Para viagens de carro, use sempre uma caixa de transporte ou cinto de segurança específico. Para viagens de avião, cada companhia aérea tem regras rígidas sobre tamanho, raça e documentação (atestado de saúde, vacinas em dia). Verifique tudo com a companhia e o veterinário com muita antecedência."
+      ]
+    },
+    {
+      "tag": "saude_dental",
+      "patterns": [
+        "meu cachorro tá com bafo",
+        "gato com mau hálito",
+        "como escovar os dentes do pet",
+        "precisa limpar o dente do cachorro?",
+        "tártaro no dente",
+        "hálito do pet"
+      ],
+      "responses": [
+        "A saúde dental é crucial! O mau hálito (bafo) geralmente é causado por bactérias e acúmulo de tártaro. O ideal é escovar os dentes do seu pet regularmente (com pasta de dente veterinária, NUNCA humana!). Se o tártaro já estiver visível, uma limpeza no veterinário pode ser necessária."
+      ]
+    },
+    {
+      "tag": "pet_idoso",
+      "patterns": [
+        "meu cachorro está velho",
+        "cuidados com pet idoso",
+        "quando um cão é considerado idoso?",
+        "meu gato é senior",
+        "meu pet está com dor para andar",
+        "artrose em cães"
+      ],
+      "responses": [
+        "Pets idosos (seniors) precisam de cuidados especiais! Cães de porte grande são idosos a partir dos 6-7 anos, e pequenos/gatos a partir dos 8-10 anos. Eles precisam de exames de sangue mais frequentes (check-ups), uma cama mais confortável, e talvez ajustes na dieta ou medicação para dor nas articulações (artrose)."
+      ]
+    },
+    {
+      "tag": "filhote_cuidados",
+      "patterns": [
+        "peguei um filhote, e agora?",
+        "primeiros cuidados com filhote",
+        "o que um filhote precisa?",
+        "posso sair com meu filhote na rua?",
+        "quando o filhote pode passear?"
+      ],
+      "responses": [
+        "Parabéns pelo novo membro da família! O cuidado mais importante nas primeiras semanas é: **NÃO SAIA NA RUA** ou tenha contato com outros animais até ele completar o primeiro ciclo de vacinas (dado pelo veterinário). Isso é vital para protegê-lo de doenças fatais. Mantenha-o aquecido, com ração de filhote e agende a primeira visita ao veterinário."
+      ]
+    },
+    {
+      "tag": "comportamento_roer",
+      "patterns": [
+        "meu cachorro comeu meu sapato",
+        "ele rói os móveis",
+        "como fazer parar de roer as coisas?",
+        "filhote roendo tudo",
+        "meu cachorro é destruidor"
+      ],
+      "responses": [
+        "Roer é um comportamento natural, especialmente para filhotes trocando os dentes ou cães entediados. A solução é dupla: 1) Ofereça brinquedos muito mais interessantes (mordedores, ossos de nylon, brinquedos recheáveis) e 2) Aumente os passeios e o gasto de energia. Nunca brigue, apenas redirecione o comportamento para o brinquedo correto."
+      ]
+    },
+    {
+      "tag": "pelo_caindo",
+      "patterns": [
+        "meu pet solta muito pelo",
+        "pelo caindo demais",
+        "queda de pelo",
+        "como diminuir a queda de pelo?",
+        "época de muda de pelo"
+      ],
+      "responses": [
+        "Todos os pets soltam pelo (exceto raças específicas). Muitos têm 'mudas' sazonais (na primavera e outono) onde a queda piora. A escovação regular (diária, se possível) é a melhor forma de remover o pelo morto e evitar que ele caia pela casa. Se a queda for em tufos, criar falhas na pele ou vier com coceira, procure um veterinário, pois pode ser alergia ou outra doença."
+      ]
+    },
+    {
+      "tag": "alergia_pele",
+      "patterns": [
+        "meu cachorro se coça o tempo todo",
+        "pata vermelha",
+        "meu gato tem alergia?",
+        "coceira",
+        "dermatite",
+        "meu cão está lambendo muito as patas"
+      ],
+      "responses": [
+        "Coceira excessiva (especialmente lamber as patas, coçar orelhas e barriga) é um forte sinal de alergia. As causas mais comuns são: 1) Alergia a picada de pulgas (DAPP), 2) Alergia alimentar (à ração) ou 3) Dermatite atópica (alergia a ácaros, pólen, etc.). Não dê remédios caseiros. É essencial levar ao veterinário para um diagnóstico correto."
+      ]
+    },
+    {
+      "tag": "comportamento_pedir_comida",
+      "patterns": [
+        "meu cachorro fica pedindo comida na mesa",
+        "ele chora por comida",
+        "como fazer o pet parar de pedir?",
+        "meu gato fica miando por comida",
+        "pedinte"
+      ],
+      "responses": [
+        "O pet 'pedinte' é um comportamento que *nós* (humanos) ensinamos sem querer! A regra de ouro para corrigir isso é: **NUNCA** dê comida da sua mesa ou fora dos horários. Ignore o comportamento (não olhe, não fale, não brigue). Ele precisa aprender que a comida dele vem apenas no pote dele, no horário dele."
+      ]
+    },
+    {
+      "tag": "limpeza_orelha",
+      "patterns": [
+        "como limpar a orelha do meu cachorro?",
+        "meu pet está balançando muito a cabeça",
+        "cera no ouvido",
+        "otite",
+        "orelha do meu gato está suja"
+      ],
+      "responses": [
+        "Limpar as orelhas é importante, especialmente em raças com orelhas caídas (como Cockers e Bassets). Use apenas soluções de limpeza específicas para pets (vendidas em pet shops). Molhe um algodão (nunca cotonete!) com a solução e limpe suavemente a parte visível da orelha. Se ele balança muito a cabeça ou a orelha está vermelha e cheirando mal, pode ser otite (infecção) e ele precisa de um veterinário."
+      ]
+    },
+    {
+      "tag": "vermes",
+      "patterns": [
+        "quando dar remédio de verme?",
+        "vi verme nas fezes",
+        "meu pet precisa de vermífugo?",
+        "parasitas intestinais"
+      ],
+      "responses": [
+        "Sim, todos os pets precisam de vermífugo regularmente! Filhotes tomam várias doses no início. Adultos geralmente tomam a cada 3, 6 ou 12 meses, dependendo do estilo de vida (se passeiam muito na rua, comem coisas do chão, etc.). O veterinário irá recomendar o melhor remédio e a frequência correta para o seu pet."
+      ]
+    },
+    {
+      "tag": "remedio_humano_perigo",
+      "patterns": [
+        "posso dar dipirona pro meu cachorro?",
+        "meu gato tá com dor, posso dar paracetamol?",
+        "posso dar ibuprofeno?",
+        "remédio de gente para pet"
+      ],
+      "responses": [
+        "**NUNCA DÊ MEDICAÇÃO HUMANA PARA SEU PET SEM ORDEM EXPRESSA DE UM VETERINÁRIO!** Muitos remédios comuns para nós são **EXTREMAMENTE TÓXICOS** para eles. Paracetamol, por exemplo, é **FATAL** para gatos. Ibuprofeno é tóxico para cães. Não arrisque a vida do seu animal, procure sempre um profissional."
+      ]
     }
   ]
 }
