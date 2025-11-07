@@ -14,6 +14,11 @@ def load_all_models_and_data():
     print("Iniciando carregamento de modelos...")
     
     # Caminhos relativos (funciona localmente e no Streamlit)
+    print("Downloading NLTK data...")
+    nltk.download('punkt')
+    nltk.download('wordnet')
+    print("NLTK data downloaded.")
+    
     base_path = os.path.dirname(__file__) # Pega a pasta 'src'
     model_h5_path = os.path.join(base_path, 'model.h5')
     w2v_model_path = os.path.join(base_path, 'dog_w2v.model')
