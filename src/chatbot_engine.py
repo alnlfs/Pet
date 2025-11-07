@@ -11,14 +11,20 @@ import os
 
 @st.cache_resource
 def load_all_models_and_data():
-    print("Iniciando carregamento de modelos...")
-    
-    # Caminhos relativos (funciona localmente e no Streamlit)
+    # --- ADICIONE ESTAS 5 LINHAS AQUI ---
     print("Downloading NLTK data...")
     nltk.download('punkt')
     nltk.download('wordnet')
+    nltk.download('punkt_tab')  # <-- A CORREÇÃO ESTÁ AQUI
     print("NLTK data downloaded.")
-    
+    # -------------------------------------
+
+    print("Iniciando carregamento de modelos...")
+
+    # Caminhos relativos (o resto da sua função)
+    base_path = os.path.dirname(__file__) 
+    # ... (etc) ...
+
     base_path = os.path.dirname(__file__) # Pega a pasta 'src'
     model_h5_path = os.path.join(base_path, 'model.h5')
     w2v_model_path = os.path.join(base_path, 'dog_w2v.model')
