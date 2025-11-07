@@ -540,6 +540,35 @@
       "responses": [
         "Sim, é completamente normal! Gatos são 'crepusculares' (mais ativos ao entardecer e amanhecer) e podem dormir de 12 a 16 horas por dia. Filhotes e gatos idosos dormem ainda mais. Enquanto ele estiver comendo, bebendo e brincando nos horários ativos, não há motivo para se preocupar."
       ]
+    },
+     {
+      "tag": "passeio_caes",
+      "patterns": [
+        "Quantas vezes devo passear?",
+        "passeio",
+        "passear com o cachorro",
+        "dicas para passear",
+        "meu cachorro precisa passear todo dia?",
+        "frequência de passeio do cão",
+        "Pode passear com filhote?"
+      ],
+      "responses": [
+        "Passeios são essenciais para a saúde física e mental dos cães, ajudando a gastar energia e evitar o tédio. A frequência ideal é de 2 a 3 vezes por dia. Lembre-se de usar uma guia confortável e evitar os horários de sol muito forte (como o meio-dia)."
+      ]
+    },
+    {
+      "tag": "passeio_gatos",
+      "patterns": [
+        "Pode passear com gato?",
+        "É bom passear com gato na coleira?",
+        "gato pode passear?",
+        "como passear com meu gato",
+        "gatos precisam passear?",
+        "meu gato quer sair na rua"
+      ],
+      "responses": [
+        "Geralmente, gatos não *precisam* passear como os cães. A maioria (especialmente os que vivem em apartamentos) fica perfeitamente feliz e segura em casa. Se você quiser tentar, use uma coleira peitoral (NUNCA de pescoço!) e comece devagar, em locais calmos. Nunca force o gato se ele estiver com medo."
+      ]
     }
   ]
 }
