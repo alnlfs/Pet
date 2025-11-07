@@ -1,0 +1,69 @@
+{
+  "intents": [
+    {
+      "tag": "saudacao",
+      "patterns": [
+        "Oi",
+        "Olá",
+        "Bom dia",
+        "Boa tarde",
+        "E aí?",
+        "Opa"
+      ],
+      "responses": [
+        "Olá! Eu sou o PetBot. Como posso ajudar você com seu pet hoje?",
+        "Oi! Em que posso ajudar sobre o mundo dos pets?"
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "Tchau",
+        "Até mais",
+        "Até logo",
+        "Fui",
+        "Vou sair"
+      ],
+      "responses": [
+        "Até mais! Espero ter ajudado!",
+        "Tchau! Volte sempre que tiver dúvidas sobre seu pet."
+      ]
+    },
+    {
+      "tag": "agradecimento",
+      "patterns": [
+        "Obrigado",
+        "Valeu",
+        "Muito obrigado",
+        "Obrigada",
+        "Valeu pela ajuda"
+      ],
+      "responses": [
+        "Por nada! Estou aqui para ajudar.",
+        "Não há de quê!"
+      ]
+    },
+    {
+      "tag": "alimentacao",
+      "patterns": [
+        "O que cães podem comer?",
+        "Qual a melhor ração?",
+        "fale sobre alimentação",
+        "comida",
+        "dieta",
+        "alimentação saudável"
+      ],
+      "responses": [
+        "A melhor alimentação para um pet é uma ração balanceada. Evite dar comida humana, pois muitas coisas (como chocolate, uva e cebola) são tóxicas para eles!"
+      ]
+    },
+    {
+      "tag": "sem_resposta",
+      "patterns": [],
+      "responses": [
+        "Desculpe, não entendi. Pode reformular a pergunta?",
+        "Hmm, não tenho certeza sobre isso. Pode perguntar de outra forma?"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# Ambiente Virtual e Cache
+.venv/
+__pycache__/
+
+# Arquivos do NLTK e VSCode
+nltk_data/
+.vscode/
+
+# Arquivos compilados do Python
+*.pyc
+*.pyo
