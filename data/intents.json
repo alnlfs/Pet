@@ -382,6 +382,22 @@
         "Limpar as orelhas é importante, especialmente em raças com orelhas caídas (como Cockers e Bassets). Use apenas soluções de limpeza específicas para pets (vendidas em pet shops). Molhe um algodão (nunca cotonete!) com a solução e limpe suavemente a parte visível da orelha. Se ele balança muito a cabeça ou a orelha está vermelha e cheirando mal, pode ser otite (infecção) e ele precisa de um veterinário."
       ]
     },
+
+      {
+      "tag": "hospital_publico",
+      "patterns": [
+        "hospitais publicos",
+        "hospital veterinario publico",
+        "atendimento veterinario gratuito",
+        "onde levar meu pet de graça",
+        "existe veterinario de graça?",
+        "veterinario 0800",
+        "hospital para pet gratuito"
+      ],
+      "responses": [
+        "Aqui estão os endereços dos hospitais veterinários públicos em São Paulo (todos exigem triagem social obrigatória na recepção):\n\n* **Unidade Leste:** Av. Salim Farah Maluf, esquina com R. Ulisses Cruz, lado par – Tatuapé. Agendamento presencial (casos não emergenciais): Terças, 14h-16h.\n\n* **Unidade Norte:** Rua Atílio Piffer, 687 - Casa Verde. Agendamento presencial (casos não emergenciais): Quartas, 14h-16h.\n\n* **Unidade Sul:** Rua Agostino Togneri, n° 153 – Jurubatuba. Casos não emergenciais: Senhas de segunda a sexta a partir das 7h. Agendamento presencial: Segundas, 14h-16h.\n\n* **Unidade Oeste:** Av. Professor Orlando Marques de Paiva, 87 – Butantã (USP). Casos não emergenciais: Senhas de segunda a sexta a partir das 7h."
+      ]
+    },
     {
       "tag": "vermes",
       "patterns": [
