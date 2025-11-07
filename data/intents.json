@@ -456,6 +456,90 @@
       "responses": [
         "**NUNCA DÊ MEDICAÇÃO HUMANA PARA SEU PET SEM ORDEM EXPRESSA DE UM VETERINÁRIO!** Muitos remédios comuns para nós são **EXTREMAMENTE TÓXICOS** para eles. Paracetamol, por exemplo, é **FATAL** para gatos. Ibuprofeno é tóxico para cães. Não arrisque a vida do seu animal, procure sempre um profissional."
       ]
+    },
+      {
+      "tag": "gato_caixa_areia",
+      "patterns": [
+        "meu gato está fazendo xixi fora da caixa",
+        "meu gato não usa a caixa de areia",
+        "por que meu gato está fazendo xixi no sofá?",
+        "xixi de gato no lugar errado",
+        "problema na caixa de areia",
+        "quantas caixas de areia eu preciso?",
+        "onde devo colocar a caixa de areia?"
+      ],
+      "responses": [
+        "Problemas com a caixa de areia são um sinal de alerta! Pode ser um problema de saúde (como infecção urinária - leve ao VET!) ou a caixa pode estar suja. Gatos são muito limpos. Tente estas regras: 1) Limpe a caixa 1-2x ao dia. 2) Tenha uma caixa a mais do que o número de gatos (ex: 2 gatos = 3 caixas). 3) A caixa deve estar num lugar calmo, longe da comida e da água."
+      ]
+    },
+    {
+      "tag": "gato_arranhar",
+      "patterns": [
+        "meu gato arranha o sofá",
+        "como fazer o gato parar de arranhar os móveis",
+        "arranhador para gato",
+        "gato arranhando a porta",
+        "gato arranhando a cama",
+        "por que o gato arranha?"
+      ],
+      "responses": [
+        "Gatos *precisam* arranhar! É um instinto para afiar as unhas e marcar território. Você não pode impedi-lo de arranhar, mas pode redirecioná-lo. Compre arranhadores (de sisal, papelão, carpete) e coloque-os PERTO dos locais que ele já arranha (como ao lado do sofá). Sempre que ele usar o arranhador, elogie e dê um petisco!"
+      ]
+    },
+    {
+      "tag": "gato_bola_pelo",
+      "patterns": [
+        "meu gato está tossindo",
+        "bola de pelo",
+        "como evitar bola de pelo",
+        "gato vomitando pelo",
+        "gato se lambendo muito",
+        "pasta de malt",
+        "graminha de gato"
+      ],
+      "responses": [
+        "Isso soa como uma bola de pelo! É comum, pois os gatos se lambem para se limpar. Para ajudar: 1) Escove seu gato todos os dias para remover o pelo morto. 2) Você pode comprar 'graminha de gato' (ajuda na digestão) ou 'malt' (uma pasta que ajuda a lubrificar e eliminar os pelos nas fezes). Se a 'tosse' for muito frequente, consulte um veterinário."
+      ]
+    },
+    {
+      "tag": "gato_agua",
+      "patterns": [
+        "meu gato não bebe água",
+        "como fazer meu gato beber mais água",
+        "pote de água do gato",
+        "gato bebendo pouca água",
+        "fonte de água para gato"
+      ],
+      "responses": [
+        "Gatos evoluíram do deserto e não têm o instinto de beber muita água, o que pode causar problemas renais. Para incentivá-lo: 1) Use uma fonte de água (água corrente atrai mais). 2) Espalhe vários potes de água pela casa. 3) Mantenha o pote de água LONGE do pote de comida e da caixa de areia. 4) Ofereça ração úmida (sachê) todos os dias, pois é uma ótima fonte de hidratação."
+      ]
+    },
+    {
+      "tag": "gato_tela_seguranca",
+      "patterns": [
+        "gato pode sair na rua?",
+        "preciso telar minhas janelas?",
+        "meu gato fica na janela",
+        "é perigoso deixar o gato sair?",
+        "tela de segurança",
+        "rede de proteção para gatos"
+      ],
+      "responses": [
+        "SIM! É **essencial** telar (colocar redes de proteção) em todas as janelas e varandas, não importa o andar. Gatos são curiosos, caçadores e o risco de queda é muito real. Além disso, gatos que saem na rua vivem, em média, 10 anos a menos, pois estão expostos a brigas, atropelamentos e doenças graves (como FIV e FeLV)."
+      ]
+    },
+    {
+      "tag": "gato_comportamento_dormir",
+      "patterns": [
+        "meu gato dorme o dia todo",
+        "é normal gato dormir tanto?",
+        "quantas horas um gato dorme?",
+        "meu gato parece preguiçoso",
+        "meu gato só dorme"
+      ],
+      "responses": [
+        "Sim, é completamente normal! Gatos são 'crepusculares' (mais ativos ao entardecer e amanhecer) e podem dormir de 12 a 16 horas por dia. Filhotes e gatos idosos dormem ainda mais. Enquanto ele estiver comendo, bebendo e brincando nos horários ativos, não há motivo para se preocupar."
+      ]
     }
   ]
 }
