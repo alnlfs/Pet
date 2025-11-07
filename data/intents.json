@@ -84,7 +84,6 @@
         "vacinas obrigatórias para cães e gatos",
         "quando começar a vacinar meu filhote?",
         "vacina"
-
       ],
       "responses": [
         "A vacinação é crucial! Cães geralmente precisam da V8 ou V10 (múltipla) e da antirrábica. Gatos precisam da V3, V4 ou V5, além da antirrábica. O calendário exato deve ser definido por um veterinário, começando nos primeiros meses de vida."
@@ -234,10 +233,33 @@
         "Meu cachorro é bravo com outros cães",
         "Meu gato se esconde de visitas",
         "socialização",
-        "apresentar meu pet para outro"
+        "apresentar meu pet para outro",
+        "socializar meu filhote",
+        "meu cachorro não gosta de outros cães",
+        "meu gato tem medo de pessoas",
+        "como ajudar meu pet a socializar?",
+        "meu cachorro late em outros cães",
+        "meu gato foge de visitas",
+        "meu filhote tem medo de tudo",
+        "meu pet é tímido",
+        "meu cachorro é agressivo com outros cães",
+        "meu gato não gosta de outros gatos"
       ],
       "responses": [
         "A socialização é fundamental, especialmente nos primeiros meses de vida. Apresente seu filhote a diferentes pessoas, sons e outros animais (sempre vacinados!) de forma calma e positiva. Para gatos, ofereça lugares altos e seguros para eles observarem à distância. Forçar a interação pode piorar o medo, então vá com calma e paciência."
+      ]
+    },
+    {
+      "tag": "passeio",
+      "patterns": [
+        "Quantas vezes devo passear?",
+        "Pode passear com gato?",
+        "passeio",
+        "passear com o cachorro",
+        "dicas para passear"
+      ],
+      "responses": [
+        "Passeios são essenciais para a saúde física e mental dos cães, ajudando a gastar energia e evitar o tédio. A frequência ideal é de 2 a 3 vezes por dia. Gatos geralmente não precisam passear, mas se for tentar, use uma coleira peitoral específica e vá com calma."
       ]
     },
     {
