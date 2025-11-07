@@ -90,19 +90,6 @@
       ]
     },
     {
-      "tag": "castracao",
-      "patterns": [
-        "Devo castrar meu pet?",
-        "Quais as vantagens de castrar?",
-        "A castração é boa?",
-        "castração",
-        "Quando posso castrar meu cachorro ou gato?"
-      ],
-      "responses": [
-        "A castração é altamente recomendada! Ela previne várias doenças (como câncer de mama e próstata), reduz o risco de fugas, marcação de território e agressividade. O ideal é conversar com seu veterinário sobre a melhor idade para o procedimento."
-      ]
-    },
-    {
       "tag": "treinamento_xixi",
       "patterns": [
         "Como ensinar meu cachorro a fazer xixi no lugar certo?",
@@ -382,8 +369,7 @@
         "Limpar as orelhas é importante, especialmente em raças com orelhas caídas (como Cockers e Bassets). Use apenas soluções de limpeza específicas para pets (vendidas em pet shops). Molhe um algodão (nunca cotonete!) com a solução e limpe suavemente a parte visível da orelha. Se ele balança muito a cabeça ou a orelha está vermelha e cheirando mal, pode ser otite (infecção) e ele precisa de um veterinário."
       ]
     },
-
-      {
+    {
       "tag": "hospital_publico",
       "patterns": [
         "hospitais publicos",
@@ -398,25 +384,22 @@
         "Aqui estão os endereços dos hospitais veterinários públicos em São Paulo (todos exigem triagem social obrigatória na recepção):\n\n* **Unidade Leste:** Av. Salim Farah Maluf, esquina com R. Ulisses Cruz, lado par – Tatuapé. Agendamento presencial (casos não emergenciais): Terças, 14h-16h.\n\n* **Unidade Norte:** Rua Atílio Piffer, 687 - Casa Verde. Agendamento presencial (casos não emergenciais): Quartas, 14h-16h.\n\n* **Unidade Sul:** Rua Agostino Togneri, n° 153 – Jurubatuba. Casos não emergenciais: Senhas de segunda a sexta a partir das 7h. Agendamento presencial: Segundas, 14h-16h.\n\n* **Unidade Oeste:** Av. Professor Orlando Marques de Paiva, 87 – Butantã (USP). Casos não emergenciais: Senhas de segunda a sexta a partir das 7h."
       ]
     },
-
-      {
-      "tag": "castracao",
+    {
+      "tag": "castracao_info",
       "patterns": [
         "Devo castrar meu pet?",
         "Quais as vantagens de castrar?",
         "A castração é boa?",
         "castração",
         "Quando posso castrar meu cachorro ou gato?",
+        "por que castrar?",
+        "benefícios da castração",
         "é caro castrar?",
         "cirurgia de castração",
         "meu pet vai engordar se castrar?",
         "mitos sobre castração",
         "castração muda o comportamento?",
         "é perigoso castrar?",
-        "recuperação da castração",
-        "pós-operatório castração",
-        "por que castrar?",
-        "benefícios da castração",
         "castração gratuita",
         "castração de graça",
         "castração na prefeitura",
@@ -429,7 +412,26 @@
         "A castração é um procedimento seguro e muito recomendado. Sobre os mitos comuns: 1) O pet não fica 'triste', a personalidade de brincar continua a mesma. 2) A castração não engorda; o que engorda é comer demais e não fazer exercício! Apenas ajuste a quantidade de ração após o procedimento.",
         "Sim, a Prefeitura de São Paulo oferece castração gratuita! O cadastro é feito pelo portal SP 156 (busque por 'Castração de cães e gatos').\n\nVocê precisará preencher o formulário online e enviar documentos como RG, CPF e comprovante de residência atualizado. O animal deve ter entre 3 meses e 10 anos.\n\nApós o cadastro, uma clínica contratada entrará em contato em até 30 dias para agendar. *Lembre-se que para atendimento nos hospitais públicos, o animal precisa ter o RGA (Registro Geral do Animal).*."
       ]
-    
+    },
+    {
+      "tag": "castracao_recuperacao",
+      "patterns": [
+        "recuperação da castração",
+        "pós-operatório castração",
+        "cuidados depois da castração",
+        "meu pet operado",
+        "como é a recuperação da castração?",
+        "o que fazer depois que meu pet castrar?",
+        "meu cachorro castrou, e agora?",
+        "cuidados com os pontos da castração",
+        "meu gato operou, quais os cuidados?",
+        "precisa usar roupa cirúrgica?",
+        "colar elizabetano"
+      ],
+      "responses": [
+        "O pós-operatório é a parte mais importante! O cuidado principal é **impedir que o pet lamba os pontos** (a ferida). Para isso, ele *precisa* usar o 'cone' (colar elizabetano) ou a roupa cirúrgica 100% do tempo. Mantenha-o em repouso (sem pulos ou corridas) e dê os remédios para dor e inflamação exatamente como o veterinário receitou.",
+        "A recuperação da castração é simples, mas exige atenção. É normal o pet ficar mais quieto ou 'grogue' no primeiro dia. Além de dar os remédios, você **NÃO PODE** deixar ele lamber ou morder a cirurgia. Use o colar elizabetano ou a roupa cirúrgica sem falta. Fique de olho nos pontos: se ficarem muito vermelhos, inchados ou com secreção (pus), ligue para o veterinário imediatamente."
+      ]
     },
     {
       "tag": "vermes",
