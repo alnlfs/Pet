@@ -31,6 +31,16 @@
       "responses": ["A vacinação é crucial! Cães geralmente precisam da V8 ou V10 (múltipla) e da antirrábica. Gatos precisam da V3, V4 ou V5, além da antirrábica. O calendário exato deve ser definido por um veterinário, começando nos primeiros meses de vida."]
     },
     {
+      "tag": "castracao_info",
+      "patterns": ["Devo castrar meu pet?", "Quais as vantagens de castrar?", "A castração é boa?", "castração", "Quando posso castrar meu cachorro ou gato?", "por que castrar?", "benefícios da castração", "é caro castrar?", "cirurgia de castração", "meu pet vai engordar se castrar?", "mitos sobre castração", "castração muda o comportamento?", "é perigoso castrar?", "castração gratuita", "castração de graça", "castração na prefeitura", "como castrar no SP 156", "agendamento castração gratuita", "documentos para castração gratuita"],
+      "responses": ["A castração é altamente recomendada! Ela previne várias doenças (como câncer de mama, útero e próstata) e melhora o comportamento. A Prefeitura de SP oferece o serviço gratuitamente via Portal SP 156. Você precisará de RG, CPF, comprovante de residência e o RGA do animal."]
+    },
+    {
+      "tag": "castracao_recuperacao",
+      "patterns": ["recuperação da castração", "pós-operatório castração", "cuidados depois da castração", "meu pet operado", "como é a recuperação da castração?", "o que fazer depois que meu pet castrar?", "meu cachorro castrou, e agora?", "cuidados com os pontos da castração", "meu gato operou, quais os cuidados?", "precisa usar roupa cirúrgica?", "colar elizabetano"],
+      "responses": ["A recuperação exige que você **impeça** o pet de lamber os pontos. Use o colar elizabetano ou roupa cirúrgica o tempo todo! Mantenha repouso e dê a medicação prescrita. Se houver inchaço ou secreção, procure o veterinário."]
+    },
+    {
       "tag": "treinamento_xixi",
       "patterns": ["Como ensinar meu cachorro a fazer xixi no lugar certo?", "Meu pet faz xixi pela casa toda", "treinamento de banheiro", "xixi errado", "educar o filhote a usar o tapete"],
       "responses": ["Treinar dá trabalho, mas é possível! Limite o espaço dele no início, forre a área desejada com tapete higiênico, leve-o para lá depois de comer ou acordar, e recompense MUITO (com festa e petiscos) quando ele acertar. Nunca brigue se ele errar; apenas limpe com produtos que eliminam o odor (sem amônia)."]
@@ -81,6 +91,16 @@
       "responses": ["A socialização é fundamental, especialmente nos primeiros meses de vida. Apresente seu filhote a diferentes pessoas, sons e outros animais (sempre vacinados!) de forma calma e positiva. Para gatos, ofereça lugares altos e seguros para eles observarem à distância. Forçar a interação pode piorar o medo, então vá com calma e paciência."]
     },
     {
+      "tag": "passeio_caes",
+      "patterns": ["Quantas vezes devo passear?", "passeio", "passear com o cachorro", "dicas para passear", "meu cachorro precisa passear todo dia?", "frequência de passeio do cão", "Pode passear com filhote?"],
+      "responses": ["Passeios são essenciais para cães! O ideal é 2 a 3 vezes por dia, em horários frescos. Filhotes só podem ir à rua após todas as vacinas."]
+    },
+    {
+      "tag": "passeio_gatos",
+      "patterns": ["Pode passear com gato?", "É bom passear com gato na coleira?", "gato pode passear?", "como passear com meu gato", "gatos precisam passear?", "passeio com gato", "meu gato quer sair na rua"],
+      "responses": ["Gatos geralmente não precisam passear. Se quiser tentar, use coleira peitoral e vá com calma. Nunca force."]
+    },
+    {
       "tag": "viagem_pet",
       "patterns": ["Posso viajar com meu pet?", "Como levar meu cachorro no avião?", "viagem de carro com gato", "o que precisa para viajar com animal?", "transporte pet"],
       "responses": ["Viajar com pets exige muito planejamento! Para viagens de carro, use sempre uma caixa de transporte ou cinto de segurança específico. Para viagens de avião, cada companhia aérea tem regras rígidas sobre tamanho, raça e documentação (atestado de saúde, vacinas em dia). Verifique tudo com a companhia e o veterinário com muita antecedência."]
@@ -97,7 +117,7 @@
     },
     {
       "tag": "filhote_cuidados",
-      "patterns": ["peguei um filhote, e agora?", "primeiros cuidados com filhote", "o que um filhote precisa?", "posso sair com meu filhote na rua?", "quando o filhote pode passear?"],
+      "patterns": ["peguei um filhote, e agora?", "primeiros cuidados com filhote", "o que um filhote precisa?", "posso sair com meu filhote na rua?", "quando o filhote pode passear?", "filhote", "filhotes", "adotei um filhote", "cuidados filhote de cachorro", "cuidados filhote de gato"],
       "responses": ["Parabéns pelo novo membro da família! O cuidado mais importante nas primeiras semanas é: **NÃO SAIA NA RUA** ou tenha contato com outros animais até ele completar o primeiro ciclo de vacinas (dado pelo veterinário). Isso é vital para protegê-lo de doenças fatais. Mantenha-o aquecido, com ração de filhote e agende a primeira visita ao veterinário."]
     },
     {
@@ -131,24 +151,14 @@
       "responses": ["Aqui estão os endereços dos hospitais veterinários públicos em São Paulo (todos exigem triagem social obrigatória na recepção):\n\n* **Unidade Leste:** Av. Salim Farah Maluf, esquina com R. Ulisses Cruz, lado par – Tatuapé.\n* **Unidade Norte:** Rua Atílio Piffer, 687 - Casa Verde.\n* **Unidade Sul:** Rua Agostino Togneri, n° 153 – Jurubatuba.\n* **Unidade Oeste:** Av. Professor Orlando Marques de Paiva, 87 – Butantã (USP)."]
     },
     {
-      "tag": "castracao_info",
-      "patterns": ["Devo castrar meu pet?", "Quais as vantagens de castrar?", "A castração é boa?", "castração", "Quando posso castrar meu cachorro ou gato?", "por que castrar?", "benefícios da castração", "é caro castrar?", "cirurgia de castração", "meu pet vai engordar se castrar?", "mitos sobre castração", "castração muda o comportamento?", "é perigoso castrar?", "castração gratuita", "castração de graça", "castração na prefeitura", "como castrar no SP 156", "agendamento castração gratuita", "documentos para castração gratuita"],
-      "responses": ["A castração é altamente recomendada! Ela previne doenças e melhora o comportamento. A Prefeitura de SP oferece o serviço gratuitamente via Portal SP 156. Você precisará de RG, CPF, comprovante de residência e o RGA do animal."]
-    },
-    {
-      "tag": "castracao_recuperacao",
-      "patterns": ["recuperação da castração", "pós-operatório castração", "cuidados depois da castração", "meu pet operado", "como é a recuperação da castração?", "o que fazer depois que meu pet castrar?", "meu cachorro castrou, e agora?", "cuidados com os pontos da castração", "meu gato operou, quais os cuidados?", "precisa usar roupa cirúrgica?", "colar elizabetano"],
-      "responses": ["A recuperação exige que você **impeça** o pet de lamber os pontos. Use o colar elizabetano ou roupa cirúrgica o tempo todo! Mantenha repouso e dê a medicação prescrita. Se houver inchaço ou secreção, procure o veterinário."]
-    },
-    {
       "tag": "vermes",
       "patterns": ["quando dar remédio de verme?", "vi verme nas fezes", "meu pet precisa de vermífugo?", "parasitas intestinais"],
-      "responses": ["Sim, todos os pets precisam de vermífugo regularmente! Adultos geralmente tomam a cada 3, 6 ou 12 meses, dependendo do estilo de vida. Consulte o veterinário."]
+      "responses": ["Sim, todos os pets precisam de vermífugo regularmente! Filhotes tomam várias doses no início. Adultos geralmente tomam a cada 3, 6 ou 12 meses, dependendo do estilo de vida (se passeiam muito na rua, comem coisas do chão, etc.). O veterinário irá recomendar o melhor remédio e a frequência correta para o seu pet."]
     },
     {
       "tag": "remedio_humano_perigo",
       "patterns": ["posso dar dipirona pro meu cachorro?", "meu gato tá com dor, posso dar paracetamol?", "posso dar ibuprofeno?", "remédio de gente para pet"],
-      "responses": ["**NUNCA DÊ MEDICAÇÃO HUMANA SEM ORDEM VETERINÁRIA!** Paracetamol mata gatos. Ibuprofeno é tóxico para cães. Não arrisque a vida do seu animal."]
+      "responses": ["**NUNCA DÊ MEDICAÇÃO HUMANA PARA SEU PET SEM ORDEM EXPRESSA DE UM VETERINÁRIO!** Muitos remédios comuns para nós são **EXTREMAMENTE TÓXICOS** para eles. Paracetamol, por exemplo, é **FATAL** para gatos. Ibuprofeno é tóxico para cães. Não arrisque a vida do seu animal, procure sempre um profissional."]
     },
     {
       "tag": "gato_caixa_areia",
@@ -181,34 +191,44 @@
       "responses": ["Normalíssimo! Gatos dormem de 12 a 16 horas por dia. Se ele come e brinca nos momentos acordado, está tudo bem."]
     },
     {
-      "tag": "passeio_caes",
-      "patterns": ["Quantas vezes devo passear?", "passeio", "passear com o cachorro", "dicas para passear", "meu cachorro precisa passear todo dia?", "frequência de passeio do cão", "Pode passear com filhote?"],
-      "responses": ["Passeios são essenciais para cães! O ideal é 2 a 3 vezes por dia, em horários frescos. Filhotes só podem ir à rua após todas as vacinas."]
+      "tag": "ansiedade_separacao",
+      "patterns": ["meu cachorro chora quando eu saio", "ele destrói a casa quando fica sozinho", "meu pet tem ansiedade de separação", "como tratar ansiedade de separação", "gato miando muito quando fica sozinho", "meu pet sofre quando eu saio"],
+      "responses": ["A Ansiedade de Separação é angustiante. Dicas: Cansar o pet antes de sair, deixar brinquedos recheados (Kongs) e não fazer 'festa' ao sair ou chegar. Treine saídas curtas."]
     },
     {
-      "tag": "passeio_gatos",
-      "patterns": ["Pode passear com gato?", "É bom passear com gato na coleira?", "gato pode passear?", "como passear com meu gato", "gatos precisam passear?", "passeio com gato", "meu gato quer sair na rua"],
-      "responses": ["Gatos geralmente não precisam passear. Se quiser tentar, use coleira peitoral e vá com calma. Nunca force."]
+      "tag": "dog_puxar_guia",
+      "patterns": ["meu cachorro me puxa muito no passeio", "como fazer o cachorro andar junto", "ele não para de puxar a coleira", "meu cachorro me arrasta na rua", "andar do lado na guia"],
+      "responses": ["Se ele puxar, PARE imediatamente. Só ande quando a guia afrouxar. Use peitoral antipuxão (com argola na frente) e recompense quando ele andar ao lado."]
     },
     {
-      "tag": "equipamento_tipos_coleira",
-      "patterns": ["Quais são os principais tipos de coleira?", "Fale sobre os tipos mais comuns de coleiras", "Que tipos de coleira devo comprar?", "Quais os modelos de coleira existem?"],
-      "responses": ["Existem 3 tipos principais: Coleira Plana (uso diário), Peitoral (conforto e segurança) e Coleiras de Adestramento (cabresto)."]
+      "tag": "dog_cavar",
+      "patterns": ["meu cachorro cava o quintal", "por que o cachorro cava buraco?", "como parar de cavar", "cachorro cavando o sofá", "cachorro cavando a cama", "meu cachorro destrói o jardim"],
+      "responses": ["Cavar é instinto! Pode ser tédio ou calor. Aumente os passeios e, se possível, dê a ele um lugar permitido para cavar (caixa de areia/terra) escondendo brinquedos lá."]
     },
     {
-      "tag": "equipamento_peitoral_vs_coleira",
-      "patterns": ["É melhor usar peitoral ou coleira?", "Quando devo escolher um peitoral?", "Meu cão puxa muito, uso peitoral?", "diferença entre peitoral e coleira"],
-      "responses": ["O peitoral é melhor para cães pequenos, de focinho curto ou que puxam muito, pois evita lesões no pescoço."]
+      "tag": "introducao_novo_pet",
+      "patterns": ["peguei um novo cachorro, como apresentar pro antigo?", "meu cachorro e meu gato não se dão bem", "apresentar gato e cão", "como introduzir um novo filhote", "meus pets estão brigando", "adaptação novo pet"],
+      "responses": ["Introduza devagar! 1) Apresente cães em local neutro (rua). 2) Em casa, mantenha separados e troque panos com o cheiro de cada um. 3) Deixe se verem de longe. 4) Associe a presença do outro com petiscos."]
     },
     {
-      "tag": "equipamento_focinheira",
-      "patterns": ["Quando usar focinheira?", "Quais os tipos de focinheira?", "Focinheira é obrigatória?", "focinheira de cesta ou tecido?"],
-      "responses": ["A focinheira é obrigatória para raças como Pitbull e Rottweiler em locais públicos. Use o modelo 'cesta' para passeios (permite respirar) e de tecido apenas para idas rápidas ao vet."]
+      "tag": "microchip",
+      "patterns": ["o que é microchip?", "preciso microchipar meu pet?", "microchip vale a pena?", "como funciona o microchip?", "identificação do pet", "microchipagem"],
+      "responses": ["O microchip é um 'RG' sob a pele. Não é GPS! Se o pet se perder, qualquer vet pode ler o chip e achar seus dados. É muito seguro e recomendado."]
     },
     {
-      "tag": "saude_envenenamento",
-      "patterns": ["Meu cachorro foi envenenado", "Sinais de envenenamento", "meu gato comeu veneno", "o que fazer em caso de envenenamento"],
-      "responses": ["Envenenamento é emergência! Sinais: salivação, tremores, vômito. NÃO dê leite nem receitas caseiras. Corra para o veterinário imediatamente."]
+      "tag": "alimentos_seguros",
+      "patterns": ["posso dar maçã pro meu cachorro?", "cenoura faz bem?", "quais frutas o pet pode comer?", "comida humana que pode dar", "quais legumes posso dar pro meu pet?", "pode dar banana?", "pode dar melancia?"],
+      "responses": ["Seguros (com moderação!): Maçã (sem semente!), banana, cenoura, abóbora cozida, melancia e brócolis. Petiscos não devem passar de 10% da dieta."]
+    },
+    {
+      "tag": "refrescar_pets",
+      "patterns": ["como refrescar meu cachorro no calor?", "meu gato está com muito calor", "cuidados com pet no verão", "posso dar gelo para meu cachorro?", "cachorro ofegante demais", "como aliviar o calor do pet", "dicas para dias quentes", "pode molhar o gato no calor?", "insolação em pets"],
+      "responses": ["No calor: Água fresca sempre (pode por gelo!), evite passeios entre 10h e 16h (asfalto quente!), use tapetes gelados ou toalhas úmidas. Para gatos: fontes de água e sachê gelado."]
+    },
+    {
+      "tag": "aquecer_pets",
+      "patterns": ["como esquentar meu cachorro no frio?", "meu gato está com frio", "cuidados com pet no inverno", "precisa colocar roupa no cachorro?", "gato sente frio?", "como proteger o pet do frio", "cachorro tremendo de frio", "cama para pet no inverno"],
+      "responses": ["No frio: Roupinhas para cães de pelo curto/idosos. Se dorme fora, a casinha deve ser protegida do vento/umidade. Gatos amam tocas e caixas com mantas. Cuidado com aquecedores!"]
     }
   ]
 }
