@@ -17,18 +17,7 @@
     },
     {
       "tag": "alimentacao",
-      "patterns": [
-        "O que cães podem comer?",
-        "Qual a melhor ração?",
-        "fale sobre alimentação",
-        "comida",
-        "dieta",
-        "alimentação saudável",
-       
-        "posso dar carne crua para o pet?",
-        "qual petisco natural posso dar ao meu gato?",
-        "posso dar ovo cozido para o cachorro?"
-      ],
+      "patterns": ["O que cães podem comer?", "Qual a melhor ração?", "fale sobre alimentação", "comida", "dieta", "alimentação saudável", "posso dar carne crua para o pet?", "qual petisco natural posso dar ao meu gato?", "posso dar ovo cozido para o cachorro?"],
       "responses": ["A melhor alimentação para um pet é uma ração balanceada. Evite dar comida humana, pois muitas coisas (como chocolate, uva e cebola) são tóxicas para eles!"]
     },
     {
@@ -63,17 +52,7 @@
     },
     {
       "tag": "brinquedos",
-      "patterns": [
-        "Qual o melhor brinquedo?",
-        "Meu cachorro destrói tudo",
-        "Como entreter meu gato?",
-        "enriquecimento ambiental",
-        "brinquedo",
-        
-        "como garantir a segurança do pet no quintal?",
-        "como deixar o ambiente saudável para gatos?",
-        "o que fazer para enriquecimento ambiental do pet?"
-      ],
+      "patterns": ["Qual o melhor brinquedo?", "Meu cachorro destrói tudo", "Como entreter meu gato?", "enriquecimento ambiental", "brinquedo"],
       "responses": ["Brinquedos são essenciais para a saúde mental! Para cães que destroem, procure brinquedos de borracha maciça (como os recheáveis). Para gatos, varinhas com penas e brinquedos que eles possam 'caçar' são os melhores. Isso se chama 'enriquecimento ambiental' e evita o tédio e a ansiedade."]
     },
     {
@@ -88,20 +67,8 @@
     },
     {
       "tag": "alimentos_toxicos",
-      "patterns": [
-        "Meu cachorro pode comer chocolate?",
-        "E uva, faz mal?",
-        "Quais comidas são venenosas para gatos?",
-        "Meu pet comeu cebola, e agora?",
-        "lista de alimentos perigosos",
-        "tóxico",
-        "comida que não pode dar",
-        
-        "quais frutas são proibidas para pets?",
-        "abacate é perigoso para cachorro?",
-        "caroço de maçã faz mal?"
-      ],
-      "responses": ["MUITO CUIDADO! Vários alimentos humanos são tóxicos. Os piores são: chocolate, uva, uva-passa, cebola, alho, xilitol (adoçante) e abacate. Na dúvida, não ofereça comida humana e consulte um veterinário imediatamente se ele comer algo suspeito."]
+      "patterns": ["Meu cachorro pode comer chocolate?", "E uva, faz mal?", "Quais comidas são venenosas para gatos?", "Meu pet comeu cebola, e agora?", "lista de alimentos perigosos", "tóxico", "comida que não pode dar", "quais frutas são proibidas para pets?", "abacate é perigoso para cachorro?", "caroço de maçã faz mal?", "o que não posso dar para cães e gatos?"],
+      "responses": ["MUITO CUIDADO! Vários alimentos humanos são tóxicos. Os piores são: chocolate, uva, uva-passa, cebola, alho, xilitol (adoçante) e abacate. Carne crua não é recomendada devido ao risco de bactérias."]
     },
     {
       "tag": "higiene_banho",
@@ -250,8 +217,23 @@
     },
     {
       "tag": "alimentos_seguros",
-      "patterns": ["posso dar maçã pro meu cachorro?", "cenoura faz bem?", "quais frutas o pet pode comer?", "comida humana que pode dar", "quais legumes posso dar pro meu pet?", "pode dar banana?", "pode dar melancia?"],
-      "responses": ["Seguros (com moderação!): Maçã (sem semente!), banana, cenoura, abóbora cozida, melancia e brócolis. Petiscos não devem passar de 10% da dieta."]
+      "patterns": [
+        "posso dar maçã pro meu cachorro?", 
+        "cenoura faz bem?", 
+        "quais frutas o pet pode comer?", 
+        "comida humana que pode dar", 
+        "quais legumes posso dar pro meu pet?", 
+        "pode dar banana?", 
+        "pode dar melancia?", 
+        "quais alimentos naturais meu cachorro pode comer?", 
+        "o que posso dar de comida natural para o gato?", 
+        "comidas saudáveis para pets", 
+        "qual petisco natural posso dar ao meu gato?", 
+        "posso dar ovo cozido para o cachorro?",
+        "comidas permitidas",
+        "alimentos permitidos" 
+      ],
+      "responses": ["Seguros (com moderação!): Maçã (sem semente!), banana, cenoura, abóbora cozida, melancia e brócolis. Gatos podem comer carne cozida sem tempero e ovo. Petiscos não devem passar de 10% da dieta."]
     },
     {
       "tag": "refrescar_pets",
@@ -260,23 +242,18 @@
     },
     {
       "tag": "aquecer_pets",
-      "patterns": [
-        "como esquentar meu cachorro no frio?",
-        "meu gato está com frio",
-        "cuidados com pet no inverno",
-        "precisa colocar roupa no cachorro?",
-        "gato sente frio?",
-        "como proteger o pet do frio",
-        "cachorro tremendo de frio",
-        "cama para pet no inverno",
-        "meu pet está com frio",
-        "qual a utilidade da roupa para cães?",
-        "roupa faz mal para o cachorro?",
-        "como saber se meu cachorro está bem com a roupa?",
-        "cuidados com a roupa do pet",
-        "a roupa pode dar alergia na pele do pet?"
-      ],
-      "responses": ["No frio: Roupinhas para cães de pelo curto/idosos. Se dorme fora, a casinha deve ser protegida do vento/umidade. Gatos amam tocas e caixas com mantas. Cuidado com aquecedores!"]
+      "patterns": ["como esquentar meu cachorro no frio?", "meu gato está com frio", "cuidados com pet no inverno", "gato sente frio?", "como proteger o pet do frio", "cachorro tremendo de frio", "cama para pet no inverno"],
+      "responses": ["Para o frio e inverno: Garanta que seu pet tenha uma área de descanso protegida do vento e da umidade. Cães idosos e de pelo curto sentem mais frio. Mantenha as caminhas aquecidas com cobertores. **Use roupas apenas se o pet tolerar e se for realmente necessário, complementando a proteção.**"]
+    },
+    {
+      "tag": "roupa_geral",
+      "patterns": ["roupa para cachorro", "cachorro usa roupa", "roupa para cães é útil?", "roupa para cães é bom?", "qual a utilidade da roupa para cães?", "roupa faz mal?", "roupa faz mal para o cachorro?", "roupa para pet é só enfeite?", "como saber se meu cachorro está bem com a roupa?", "cuidados com a roupa do pet", "a roupa pode dar alergia na pele do pet?", "meu cachorro pode usar roupa?"],
+      "responses": ["Roupas podem ajudar cães idosos ou de pelo curto a se aquecerem no frio. **Atenção:** A roupa deve ser do tamanho correto e retirada diariamente para inspecionar a pele. Roupa de material inadequado ou úmida pode causar alergia ou dermatite. Nunca force o pet a usar."]
+    },
+    {
+      "tag": "ambiente_saudavel",
+      "patterns": ["Como criar um ambiente saudável para o pet?", "o que fazer para enriquecimento ambiental do pet?", "como garantir a segurança do pet no quintal?", "como deixar o ambiente saudável para gatos?", "o que é enriquecimento ambiental?", "rotina é importante para o pet?"],
+      "responses": ["Um ambiente saudável envolve segurança (sem tóxicos), higiene e enriquecimento mental, como brinquedos e passeios. A rotina também é fundamental para o bem-estar emocional."]
     }
   ]
 }
