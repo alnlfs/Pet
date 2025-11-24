@@ -4,9 +4,8 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 import gensim
 import string
 
-# Configurar o NLTK (necessário na primeira vez)
 nltk.download('punkt')
-nltk.download('punkt_tab') # Garantindo que temos o tokenizer de português
+nltk.download('punkt_tab') 
 
 print("Iniciando coleta de dados da Wikipédia...")
 wiki_api = wikipediaapi.Wikipedia(
@@ -61,11 +60,11 @@ w2v_model = gensim.models.Word2Vec(
     sentences=dados_treino_w2v,
     vector_size=100,
     window=5,
-    min_count=2, # Reduzimos para 2 para capturar mais palavras
+    min_count=2, 
     workers=4
 )
 
-# Salva o modelo treinado DENTRO da pasta 'src'
+
 w2v_model.save("dog_w2v.model")
 print("\nTreinamento concluído!")
 print("Modelo salvo como 'src/dog_w2v.model'.")
