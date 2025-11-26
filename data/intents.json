@@ -235,7 +235,7 @@
     {
       "tag": "aquecer_pets",
       "patterns": ["como esquentar meu cachorro no frio?", "meu gato está com frio", "cuidados com pet no inverno", "gato sente frio?", "como proteger o pet do frio", "cachorro tremendo de frio", "cama para pet no inverno"],
-      "responses": ["Para o frio e inverno: Garanta que seu pet tenha uma área de descanso protegida do vento e da umidade. Cães idosos e de pelo curto sentem mais frio. Mantenha as caminhas aquecidas com cobertores. **Use roupas apenas se o pet tolerar e se for realmente necessário, complementando a proteção.**"]
+      "responses": ["Sente sim! Para o frio e inverno: Garanta que seu pet tenha uma área de descanso protegida do vento e da umidade. Cães idosos e de pelo curto sentem mais frio. Mantenha as caminhas aquecidas com cobertores. **Use roupas apenas se o pet tolerar e se for realmente necessário, complementando a proteção.**"]
     },
     {
       "tag": "roupa_geral",
